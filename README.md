@@ -1,4 +1,4 @@
-### This project is a (working) stub
+### This project is a (working) stub for personal use that I've decided to share
 
 # Send Telegram Message for Wear OS 3
 A simple message initiator that allows you to send a text message
