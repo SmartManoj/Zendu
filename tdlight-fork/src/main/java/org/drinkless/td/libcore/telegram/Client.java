@@ -6,7 +6,7 @@
 //
 package org.drinkless.td.libcore.telegram;
 
-import com.daino.libsgram.TelegramConfiguration;
+import it.wear.libsgram.TelegramConfiguration;
 
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.atomic.AtomicLong;
@@ -17,9 +17,6 @@ import java.util.concurrent.locks.ReentrantReadWriteLock;
 import it.tdlight.common.ExceptionHandler;
 import it.tdlight.common.ResultHandler;
 import it.tdlight.common.TelegramClient;
-import it.tdlight.common.UpdatesHandler;
-import it.tdlight.common.ResultHandler;
-import it.tdlight.common.ExceptionHandler;
 
 /**
  * Main class for interaction with the TDLib.

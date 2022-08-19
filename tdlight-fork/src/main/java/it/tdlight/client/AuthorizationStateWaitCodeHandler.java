@@ -1,12 +1,11 @@
 package it.tdlight.client;
 
-import com.daino.libsgram.TelegramConfiguration;
+import it.wear.libsgram.TelegramConfiguration;
 
 import it.tdlight.common.ExceptionHandler;
 import it.tdlight.common.TelegramClient;
-import org.drinkless.td.libcore.telegram.TdApi;
+
 import org.drinkless.td.libcore.telegram.TdApi.AuthorizationStateWaitCode;
-import org.drinkless.td.libcore.telegram.TdApi.AuthorizationStateWaitOtherDeviceConfirmation;
 import org.drinkless.td.libcore.telegram.TdApi.CheckAuthenticationCode;
 import org.drinkless.td.libcore.telegram.TdApi.Error;
 import org.drinkless.td.libcore.telegram.TdApi.Function;

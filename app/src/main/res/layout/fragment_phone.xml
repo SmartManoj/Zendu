@@ -9,7 +9,6 @@
 
     <Button
         android:id="@+id/startBtn"
-        style="@android:style/Widget.Button"
         android:layout_width="96dp"
         android:layout_height="48dp"
         android:onClick="onClick"
@@ -27,7 +26,7 @@
         android:layout_height="48dp"
         android:layout_marginTop="48dp"
         android:ems="10"
-        android:hint="Phone Number"
+        android:hint="Intl. phone number"
         android:inputType="number|phone"
         android:minHeight="48dp"
         android:textAlignment="center"

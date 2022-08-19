@@ -9,7 +9,6 @@
 
     <Button
         android:id="@+id/sencCodeBtn"
-        style="@android:style/Widget.Button"
         android:layout_width="96dp"
         android:layout_height="48dp"
         android:onClick="onClick"

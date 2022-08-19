@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.daino.dainogram">
+    package="it.wear.sendtgmsg">
 
     <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.VIBRATE" />
 
     <uses-feature android:name="android.hardware.type.watch" />
 
@@ -16,8 +16,8 @@
         android:supportsRtl="true"
         android:theme="@android:style/Theme.DeviceDefault">
         <activity
-            android:name=".ChatListActivity"
-            android:exported="true" />
+            android:name="it.wear.sendtgmsg.ChatListActivity"
+            android:exported="false" />
 
         <uses-library
             android:name="com.google.android.wearable"
@@ -31,7 +31,7 @@
             android:value="true" />
 
         <activity
-            android:name=".MainActivity"
+            android:name="it.wear.sendtgmsg.MainActivity"
             android:exported="true"
             android:label="@string/app_name">
             <intent-filter>

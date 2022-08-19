@@ -1,22 +1,18 @@
-package com.daino.dainogram;
-
+package it.wear.sendtgmsg;
 
 import static org.drinkless.td.libcore.telegram.TdApi.*;
 
 import android.content.Context;
 import android.os.Build;
-import android.os.VibrationEffect;
-import android.os.Vibrator;
 import android.util.Log;
 
-import com.daino.libsgram.TelegramConfiguration;
+import it.wear.libsgram.TelegramConfiguration;
 
 import java.nio.file.Paths;
 
 import it.tdlight.client.APIToken;
 import it.tdlight.client.AuthenticationData;
 import it.tdlight.client.GenericUpdateHandler;
-import it.tdlight.client.Result;
 import it.tdlight.client.SimpleTelegramClient;
 import it.tdlight.client.TDLibSettings;
 import it.tdlight.common.Init;
@@ -36,6 +32,10 @@ public class ClientFactory {
         settings.setDatabaseDirectoryPath(Paths.get(String.valueOf(applicationContext.getFilesDir()).concat("/database")));
         settings.setDownloadedFilesDirectoryPath(Paths.get(String.valueOf(applicationContext.getFilesDir()).concat("/download")));
 
+        // Ignore advanced features
+        settings.setDeviceModel(Build.MODEL);
+        settings.setMessageDatabaseEnabled(false);
+
         telegramClient = new SimpleTelegramClient(settings);
 
         long phoneNumberLong = Long.parseLong(phoneNumber);
@@ -51,6 +51,7 @@ public class ClientFactory {
             }
         });
 
+        /*
         telegramClient.addUpdateHandler(UpdateNewMessage.class, update -> {
             // Get the message content
             MessageContent messageContent = update.message.content;
@@ -81,6 +82,7 @@ public class ClientFactory {
             });
 
         });
+        */
 
         // Start the client
         telegramClient.start(authenticationData);

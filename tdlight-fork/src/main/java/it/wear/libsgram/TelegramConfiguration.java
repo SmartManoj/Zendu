@@ -1,6 +1,4 @@
-package com.daino.libsgram;
-
-import org.drinkless.td.libcore.telegram.Client;
+package it.wear.libsgram;
 
 import java.util.concurrent.Semaphore;
 
