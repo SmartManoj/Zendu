@@ -1,3 +1,6 @@
+APK file: https://t.me/Awesome_Android_Apps7/158
+
+
 ### This project is a (working) stub for personal use that I've decided to share
 
 # Send Telegram Message for Wear OS 3
